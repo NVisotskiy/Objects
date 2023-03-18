@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+<h1>Car Info</h1>
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>Виробник</td>
+    <td><input type="text" id="manufacturer" value="" /></td>
+  </tr>
+  <tr>
+    <td>Модель</td>
+    <td><input type="text" id="model" value="" /></td>
+  </tr>
+  <tr>
+    <td>РІк</td>
+    <td><input type="text" id="year" value="" /></td>
+  </tr>
+  <tr>
+    <td>Середня швидкість (км/год)</td>
+    <td><input type="text" id="avgSpeed" value="" /></td>
+  </tr>
+  <tr>
+    <td>Ємність паливного баку (літри)</td>
+    <td><input type="text" id="fuelCapacity" value="" /></td>
+  </tr>
+  <tr>
+    <td>Середня витрата палива (літри/100 км)</td>
+    <td><input type="text" id="avgFuelConsumption" value="" /></td>
+  </tr>
+  <tr>
+    <td>Водії</td>
+    <td>
+      <ul id="drivers"></ul>
+      <br>
+      <input type="text" id="driverName" placeholder="Enter driver name" /><br>
+      <button onclick="addDriver()">Add Driver</button>
+    </td>
+  </tr>
+  <tr>
+    <td>Відстань (км)</td>
+    <td><input type="text" id="distance" value="" /></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <button onclick="displayCarInfo()">Display Car Info</button>
+    </td>
+  </tr>
+</table>
+<br>
+<p id="carInfo"></p>
+
+<script src="JS/objects.js"></script>
+
+
+</body>
+</html>
